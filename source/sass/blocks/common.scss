@@ -1,0 +1,76 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 160%;
+  text-align: left;
+  text-transform: uppercase;
+  color: $base-black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+  }
+}
+
+.container {
+  min-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 135px;
+  }
+}
+
+.line-vertical {
+  position: relative;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $light-grey;
+      left: 0;
+      top: -100%;
+      bottom: -100%;
+    }
+  }
+}
+
+.line-horizontal {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $medium-grey;
+    left: -100%;
+    right: -100%;
+    top: -2px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

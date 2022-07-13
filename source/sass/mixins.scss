@@ -1,0 +1,14 @@
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin link-default {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}

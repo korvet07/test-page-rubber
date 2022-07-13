@@ -1,0 +1,36 @@
+.auth {
+  @include link-default;
+
+  @media (min-width: $tablet-width) {
+    min-width: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &:hover {
+      color: $deep-grey;
+    }
+  }
+}
+
+.auth__user-name {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-right: 10px;
+  }
+}
+
+.auth__user-img-wrapper {
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
