@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  height: 16px;
+  height: 40px;
 
 
   &::placeholder {
@@ -51,6 +51,10 @@
   &:focus,
   &:active {
     outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 16px;
   }
 }
 
