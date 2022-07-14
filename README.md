@@ -15,3 +15,5 @@ Test-page "Наши партнёры".
 375px;
 
 -Верстка должна быть семантической;
+Макет https://www.figma.com/file/qLWjxRD3yoT2N42DgBIWJ8/Front-end-Junio
+r-Test-Task?node-id=0%3A1
